@@ -1,0 +1,9 @@
+version: '2.2'
+services:
+  backend-business:
+    image:  'registry.cn-beijing.aliyuncs.com/meowbite/gitlab:12.0.0-ce.0'
+    restart: always
+    mem_limit: 6000000000
+    ports:
+      - "8080:80"
+      - "443:443"
